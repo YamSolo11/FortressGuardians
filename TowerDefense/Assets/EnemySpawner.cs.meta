@@ -1,0 +1,12 @@
+fileFormatVersion: 2
+guid: f7cf54954f51c4b4c818290d43e15147
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - swamerPrefab: {fileID: 919132149155446097, guid: ee3012c6bb7bea74a924e296e0f049cf, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

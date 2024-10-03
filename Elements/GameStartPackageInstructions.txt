@@ -1,0 +1,10 @@
+1) Open TowerDefence project in Unity Editor and import GameStart.unitypackage from Assets | Import Package | Custom Package...
+2) Make sure that SceneLoader.cs, TeamLogo.jpg and StartMenu.jpg are in TowerDefence | Assets folder now.
+3) Go to File | Build Settings and make sure that StartMenu scene is the first scene followed by our main scene (now is SampleScene, but needs to be renamed)
+	If not, open SampleScene by clicking on it in Project tab under Assets | Scenes folder, and go to "Build Settings" and click "Add open scenes" button 
+4) In "Build Settings", click on "Player Settings..." and scroll down in the popped window on the right to Logos under "Settings for Windows, Mac, Linux"
+4) Click "+" under "Logos , List Empty" and drag GameLogo.jpg from Assets folder on Project tab to "None (Sprite) Select" rectangle that appeared under Logos
+	when sign under mouse pointer becomes "+" let it go, and logo now accupies that empty rectangle. Close both windows "Build Settings" and "Project Settings".
+5) Open "StartMenu" scene by clicking on it in Project tab under Assets | Scenes folder and start game in editor by clicking ">" play button at the top.
+	Click on "Play Game" button, and SampleScene should start. 
+	If you renamed "SampleScene" to another name, Open "StartMenu" scene, go to Hierarchy | Canvas | Play Button, and change that name under OnClick() section in the Inspector window on the right.

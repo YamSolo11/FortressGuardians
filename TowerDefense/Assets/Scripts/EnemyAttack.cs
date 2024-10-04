@@ -6,24 +6,28 @@ public class EnemyAttack : MonoBehaviour
 {
 
     public Transform target;
+    public GameObject bulletPrefab;
+    public Transform firePoint;
+
+    [Header("Attributes")]
+
     public float range = 15f;
+    public float fireRate = 1f;         //How many seconds to fire
+    private float fireCountdown = 0f;   //Used to countdown to fire again
 
     public string enemyTag = "Enemy";
-
-    public float fireRate = 1f;
-    private float fireCountdown = 0f;
 
     // Start is called before the first frame update
     void Start()
     {
         InvokeRepeating("UpdateTarget", 0f, 0.5f);
     }
-    
+
     void UpdateTarget()
     {
         GameObject enemies = GameObject.FindGameObjectWithTag(enemyTag);
         float distanceToEnemy = Vector3.Distance(transform.position, enemies.transform.position);
-        if(distanceToEnemy <= range)
+        if (distanceToEnemy <= range)
         {
             target = enemies.transform;
         }
@@ -31,21 +35,21 @@ public class EnemyAttack : MonoBehaviour
         {
             target = null;
         }
-        
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        if(target == null)
+        if (target == null)
         {
             return;
         }
 
-        if(fireCountdown <= 0f)
+        if (fireCountdown <= 0f)
         {
             Shoot();
-            fireCountdown = 1f / fireRate;
+            fireCountdown = fireRate;
         }
 
         fireCountdown -= Time.deltaTime;
@@ -53,7 +57,13 @@ public class EnemyAttack : MonoBehaviour
 
     void Shoot()
     {
-        Debug.Log("SHOOT!");
+        GameObject bulletGO = (GameObject)Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
+        Bullet bullet = bulletGO.GetComponent<Bullet>();
+
+        if(bullet != null)
+        {
+            bullet.Seek(target);
+        }
     }
 
     void OnDrawGizmosSelected()

@@ -3,8 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\12566\\Documents\\GitHub\\FortressGuardians\\TowerDefense\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\12566\\Documents\\GitHub\\FortressGuardians\\TowerDefense\\Assets\\EnemyAttack.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\EnemyAttack.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\12566\\Documents\\GitHub\\FortressGuardians\\TowerDefense\\Assets\\Scripts\\Bullet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scripts\\Bullet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\12566\\Documents\\GitHub\\FortressGuardians\\TowerDefense\\Assets\\Scripts\\EnemyAttack.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scripts\\EnemyAttack.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,19 +18,32 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "EnemyAttack.cs",
-              "DocumentMoniker": "C:\\Users\\12566\\Documents\\GitHub\\FortressGuardians\\TowerDefense\\Assets\\EnemyAttack.cs",
-              "RelativeDocumentMoniker": "Assets\\EnemyAttack.cs",
-              "ToolTip": "C:\\Users\\12566\\Documents\\GitHub\\FortressGuardians\\TowerDefense\\Assets\\EnemyAttack.cs",
-              "RelativeToolTip": "Assets\\EnemyAttack.cs",
-              "ViewState": "AQIAABIAAAAAAAAAAAAAADcAAAAcAAAA",
+              "DocumentMoniker": "C:\\Users\\12566\\Documents\\GitHub\\FortressGuardians\\TowerDefense\\Assets\\Scripts\\EnemyAttack.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\EnemyAttack.cs",
+              "ToolTip": "C:\\Users\\12566\\Documents\\GitHub\\FortressGuardians\\TowerDefense\\Assets\\Scripts\\EnemyAttack.cs",
+              "RelativeToolTip": "Assets\\Scripts\\EnemyAttack.cs",
+              "ViewState": "AQIAACEAAAAAAAAAAAAAADwAAAA4AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-04T02:02:55.918Z",
+              "WhenOpened": "2024-10-04T15:28:07.998Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Bullet.cs",
+              "DocumentMoniker": "C:\\Users\\12566\\Documents\\GitHub\\FortressGuardians\\TowerDefense\\Assets\\Scripts\\Bullet.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Bullet.cs",
+              "ToolTip": "C:\\Users\\12566\\Documents\\GitHub\\FortressGuardians\\TowerDefense\\Assets\\Scripts\\Bullet.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Bullet.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABsAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-04T15:19:06.204Z",
               "EditorCaption": ""
             }
           ]

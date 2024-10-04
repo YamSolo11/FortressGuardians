@@ -355,6 +355,7 @@
 "Assets/EnemyAttack.cs"
 "Assets/EnemySpawner.cs"
 "Assets/GroundPlacementController.cs"
+"Assets/SceneLoader.cs"
 -langversion:9.0
 /deterministic
 /optimize+

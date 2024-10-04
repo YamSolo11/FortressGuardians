@@ -5,16 +5,16 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638610937403430188
-    m_Hash: 674148673
+      ticks: 638636000540106786
+    m_Hash: 88295716
   m_LockFileStatus:
     m_FilePath: C:/Users/12566/Documents/GitHub/FortressGuardians/TowerDefense/Packages/packages-lock.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638610937527331491
-    m_Hash: 1754719187
+      ticks: 638636000540116764
+    m_Hash: 1884940714
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
 m_LocalPackages:
@@ -117,8 +117,12 @@ m_ResolvedPackages:
     - 2.3.1
     - 2.4.3
     - 2.4.4
+    - 2.5.1
+    - 2.5.2
     compatible:
     - 2.4.4
+    - 2.5.1
+    - 2.5.2
     recommended: 2.4.4
     deprecated: []
   dependencies: []

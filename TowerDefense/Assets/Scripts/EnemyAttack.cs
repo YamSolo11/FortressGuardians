@@ -25,13 +25,23 @@ public class EnemyAttack : MonoBehaviour
 
     void UpdateTarget()
     {
-        GameObject enemies = GameObject.FindGameObjectWithTag(enemyTag);
-        float distanceToEnemy = Vector3.Distance(transform.position, enemies.transform.position);
-        if (distanceToEnemy <= range)
+        GameObject[] enemies = GameObject.FindGameObjectsWithTag(enemyTag);
+        float shortestDistance = Mathf.Infinity;
+        GameObject nearestEnemy = null;
+        foreach(GameObject enemy in enemies)
         {
-            target = enemies.transform;
+            float distanceToEnemy = Vector3.Distance(transform.position, enemy.transform.position);
+            if (distanceToEnemy <= shortestDistance)
+            {
+                shortestDistance = distanceToEnemy;
+                nearestEnemy = enemy;
+            }
         }
-        else
+
+        if(nearestEnemy != null && shortestDistance <= range)
+        {
+            target = nearestEnemy.transform;
+        } else
         {
             target = null;
         }

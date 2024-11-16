@@ -831,16 +831,28 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: -182313310601849750, guid: 156ba47467e2fd74a9e2b62df5660526, type: 3}
+      propertyPath: useLaser
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -182313310601849750, guid: 156ba47467e2fd74a9e2b62df5660526, type: 3}
       propertyPath: firePoint
       value: 
       objectReference: {fileID: 248659663}
     - target: {fileID: -182313310601849750, guid: 156ba47467e2fd74a9e2b62df5660526, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -182313310601849750, guid: 156ba47467e2fd74a9e2b62df5660526, type: 3}
       propertyPath: bulletPrefab
       value: 
       objectReference: {fileID: 1154209669820022487, guid: 13210a5020c05614b91675c167aaa8f8, type: 3}
+    - target: {fileID: -182313310601849750, guid: 156ba47467e2fd74a9e2b62df5660526, type: 3}
+      propertyPath: lineRenderer
+      value: 
+      objectReference: {fileID: 3852935148244038885, guid: 156ba47467e2fd74a9e2b62df5660526, type: 3}
     - target: {fileID: 225247723545731290, guid: 156ba47467e2fd74a9e2b62df5660526, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 8.23
+      value: 8.4
       objectReference: {fileID: 0}
     - target: {fileID: 225247723545731290, guid: 156ba47467e2fd74a9e2b62df5660526, type: 3}
       propertyPath: m_LocalPosition.y
@@ -881,6 +893,14 @@ PrefabInstance:
     - target: {fileID: 606839369232874080, guid: 156ba47467e2fd74a9e2b62df5660526, type: 3}
       propertyPath: m_Name
       value: TowerBase
+      objectReference: {fileID: 0}
+    - target: {fileID: 3852935148244038885, guid: 156ba47467e2fd74a9e2b62df5660526, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3852935148244038885, guid: 156ba47467e2fd74a9e2b62df5660526, type: 3}
+      propertyPath: m_UseWorldSpace
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 0}

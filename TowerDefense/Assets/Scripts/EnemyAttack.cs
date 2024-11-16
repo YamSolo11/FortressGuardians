@@ -11,6 +11,8 @@ public class EnemyAttack : MonoBehaviour
 
     [Header("Attributes")]
 
+    public bool useLaser = false;
+    public LineRenderer lineRenderer;
     public float range = 15f;
     public float fireRate = 1f;         //How many seconds to fire
     private float fireCountdown = 0f;   //Used to countdown to fire again
@@ -56,13 +58,21 @@ public class EnemyAttack : MonoBehaviour
             return;
         }
 
-        if (fireCountdown <= 0f)
+        if(useLaser)
         {
-            Shoot();
-            fireCountdown = fireRate;
+            Laser();
         }
+        else
+        {
+            if (fireCountdown <= 0f)
+            {
+                Shoot();
+                fireCountdown = fireRate;
+            }
 
-        fireCountdown -= Time.deltaTime;
+            fireCountdown -= Time.deltaTime;
+        }
+        
     }
 
     void Shoot()
@@ -74,6 +84,12 @@ public class EnemyAttack : MonoBehaviour
         {
             bullet.Seek(target);
         }
+    }
+
+    void Laser()
+    {
+        lineRenderer.SetPosition(0, firePoint.position);
+        lineRenderer.SetPosition(1, target.position);
     }
 
     void OnDrawGizmosSelected()

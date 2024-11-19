@@ -13,6 +13,7 @@ public class EnemyAttack : MonoBehaviour
 
     public bool useLaser = false;
     public LineRenderer lineRenderer;
+    public Transform rotatePart;
     public float range = 15f;
     public float fireRate = 1f;         //How many seconds to fire
     private float fireCountdown = 0f;   //Used to countdown to fire again
@@ -72,7 +73,11 @@ public class EnemyAttack : MonoBehaviour
 
             fireCountdown -= Time.deltaTime;
         }
-        
+
+        Vector3 dir = target.position - transform.position;
+        Quaternion lookRotation = Quaternion.LookRotation(dir);
+        Vector3 rotation = lookRotation.eulerAngles;
+        rotatePart.rotation = Quaternion.Euler(0f, rotation.y, 0f);
     }
 
     void Shoot()

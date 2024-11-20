@@ -11,7 +11,7 @@ public class Shop : MonoBehaviour
     public int cost = 0;
 
     [SerializeField]
-    public MainShop MainHub;
+    public GameMaster MainHub;
 
     private GameObject CurrentPlaceableObject;
 

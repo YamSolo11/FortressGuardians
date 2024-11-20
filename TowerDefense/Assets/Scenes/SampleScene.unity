@@ -269,6 +269,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PlaceableObjectPrefab: {fileID: 831086503527197888, guid: e27b8d1b4f88b99479bbbf911c8a7e94, type: 3}
+  cost: 200
+  MainHub: {fileID: 1192819508}
 --- !u!1 &386165226
 GameObject:
   m_ObjectHideFlags: 0
@@ -416,6 +418,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PlaceableObjectPrefab: {fileID: 606839369232874080, guid: 99de11a1f3b0e0246bb4290e5d8d722d, type: 3}
+  cost: 100
+  MainHub: {fileID: 1192819508}
 --- !u!1 &567649839
 GameObject:
   m_ObjectHideFlags: 0
@@ -1042,6 +1046,53 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1192819507
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1192819509}
+  - component: {fileID: 1192819508}
+  m_Layer: 0
+  m_Name: World Scripts
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1192819508
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1192819507}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24a44172bc155b54a8d25b03454838f9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PurchaseBaseTower: {fileID: 386165226}
+  PurchaseMissleTower: {fileID: 239889542}
+  currency: 400
+--- !u!4 &1192819509
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1192819507}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.8, y: 0.5, z: -14.75}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1575886571 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 12777407986e82d448a9ac8363429aad, type: 3}
@@ -1340,6 +1391,7 @@ SceneRoots:
   m_Roots:
   - {fileID: 963194228}
   - {fileID: 705507995}
+  - {fileID: 1192819509}
   - {fileID: 870494645}
   - {fileID: 981006226}
   - {fileID: 865253859}

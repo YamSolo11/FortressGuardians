@@ -2,32 +2,48 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class shop : MonoBehaviour
+public class Shop : MonoBehaviour
 
 {
 
     [SerializeField]
     private GameObject PlaceableObjectPrefab;
+    public int cost = 0;
+
+    [SerializeField]
+    public MainShop MainHub;
 
     private GameObject CurrentPlaceableObject;
 
     public void PurchaseStandardTurret()
     {
-        Debug.Log("Standard Turret Purchased");
-
-        if (CurrentPlaceableObject == null)
+        if((MainHub.currency - cost) >= 0)
         {
-            CurrentPlaceableObject = Instantiate(PlaceableObjectPrefab);
+            if (CurrentPlaceableObject == null)
+            {
+                CurrentPlaceableObject = Instantiate(PlaceableObjectPrefab);
+            }
         }
         else
         {
-            Destroy(CurrentPlaceableObject);
+            Debug.Log("Not Enough Money");
         }
+       
     }
 
     public void PurchaseAnotherTurret()
     {
-        Debug.Log("Missle Turret Purchased");
+        if ((MainHub.currency - cost) >= 0)
+        {
+            if (CurrentPlaceableObject == null)
+            {
+                CurrentPlaceableObject = Instantiate(PlaceableObjectPrefab);
+            }
+        }
+        else
+        {
+            Debug.Log("Not Enough Money");
+        }
     }
 
     private void Update()
@@ -36,6 +52,11 @@ public class shop : MonoBehaviour
         {
             MoveCurrentPlaceableObjectToMouse();
             ReleaseIfClicked();
+            if(Input.GetKeyUp(KeyCode.Escape))
+            {
+                Destroy(CurrentPlaceableObject);
+                CurrentPlaceableObject = null;
+            }
         }
     }
 
@@ -55,6 +76,7 @@ public class shop : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(0))
         {
+            MainHub.currency = MainHub.currency - cost;
             CurrentPlaceableObject = null;
         }
     }

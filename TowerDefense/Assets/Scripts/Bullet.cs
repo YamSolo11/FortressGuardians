@@ -8,6 +8,9 @@ public class Bullet : MonoBehaviour
     public float explosionRadius = 0f;
     public GameObject impactEffect;
 
+    [Header("Points")]
+    public MainShop MainHub;
+
     public void Seek(Transform _target)
     {
         target = _target;
@@ -67,6 +70,7 @@ public class Bullet : MonoBehaviour
 
     void Damage(Transform enemy)
     {
+        MainHub.currency = MainHub.currency + 100;
         Destroy(enemy.gameObject);
     }
 

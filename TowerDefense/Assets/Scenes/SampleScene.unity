@@ -134,6 +134,7 @@ GameObject:
   - component: {fileID: 239889546}
   - component: {fileID: 239889545}
   - component: {fileID: 239889544}
+  - component: {fileID: 239889547}
   m_Layer: 5
   m_Name: Missle Tower
   m_TagString: Untagged
@@ -204,7 +205,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 239889545}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 239889547}
+        m_TargetAssemblyTypeName: shop, Assembly-CSharp
+        m_MethodName: PurchaseAnotherTurret
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &239889545
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -243,6 +256,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 239889542}
   m_CullTransparentMesh: 1
+--- !u!114 &239889547
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 239889542}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cee2882a495e9914cafe7f4f17db7e3c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PlaceableObjectPrefab: {fileID: 831086503527197888, guid: e27b8d1b4f88b99479bbbf911c8a7e94, type: 3}
 --- !u!1 &386165226
 GameObject:
   m_ObjectHideFlags: 0
@@ -255,6 +281,7 @@ GameObject:
   - component: {fileID: 386165230}
   - component: {fileID: 386165229}
   - component: {fileID: 386165228}
+  - component: {fileID: 386165231}
   m_Layer: 5
   m_Name: Default Tower
   m_TagString: Untagged
@@ -325,7 +352,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 386165229}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 386165231}
+        m_TargetAssemblyTypeName: shop, Assembly-CSharp
+        m_MethodName: PurchaseStandardTurret
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &386165229
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -364,6 +403,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 386165226}
   m_CullTransparentMesh: 1
+--- !u!114 &386165231
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 386165226}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cee2882a495e9914cafe7f4f17db7e3c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PlaceableObjectPrefab: {fileID: 606839369232874080, guid: 99de11a1f3b0e0246bb4290e5d8d722d, type: 3}
 --- !u!1 &567649839
 GameObject:
   m_ObjectHideFlags: 0
@@ -1250,7 +1302,7 @@ Canvas:
   m_RenderMode: 1
   m_Camera: {fileID: 963194227}
   m_PlaneDistance: 4.4
-  m_PixelPerfect: 0
+  m_PixelPerfect: 1
   m_ReceivesEvents: 1
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0

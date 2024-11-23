@@ -8,6 +8,7 @@ public class GameMaster : MonoBehaviour
     public GameObject PurchaseMissleTower;
 
     public int currency = 400;
+    public int lives = 100;
 
     public static GameMaster Instance { get; private set; }
 

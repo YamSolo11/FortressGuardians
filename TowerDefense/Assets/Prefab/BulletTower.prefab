@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 225247723545731290}
   - component: {fileID: -182313310601849750}
   - component: {fileID: 3852935148244038885}
+  - component: {fileID: 548613564418050459}
   m_Layer: 0
   m_Name: BulletTower
   m_TagString: Untagged
@@ -160,6 +161,27 @@ LineRenderer:
   m_UseWorldSpace: 1
   m_Loop: 0
   m_ApplyActiveColorSpace: 1
+--- !u!65 &548613564418050459
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 606839369232874080}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 0
+  serializedVersion: 3
+  m_Size: {x: 2.97, y: 6.67, z: 2.2315507}
+  m_Center: {x: 0.2, y: 3.335, z: 0.09677529}
 --- !u!1 &2115160183153067795
 GameObject:
   m_ObjectHideFlags: 0

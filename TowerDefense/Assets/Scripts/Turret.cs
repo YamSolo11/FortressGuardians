@@ -15,7 +15,7 @@ public class Turret : MonoBehaviour
     public LineRenderer lineRenderer;
     public Transform rotatePart;
     public float range = 15f;
-    public float fireRate = 1f;         //How many seconds to fire
+    public float fireRate = .5f;         //How many seconds to fire
     private float fireCountdown = 0f;   //Used to countdown to fire again
 
     public string enemyTag = "Enemy";
@@ -31,7 +31,7 @@ public class Turret : MonoBehaviour
         GameObject[] enemies = GameObject.FindGameObjectsWithTag(enemyTag);
         float shortestDistance = Mathf.Infinity;
         GameObject nearestEnemy = null;
-        foreach(GameObject enemy in enemies)
+        foreach (GameObject enemy in enemies)
         {
             float distanceToEnemy = Vector3.Distance(transform.position, enemy.transform.position);
             if (distanceToEnemy <= shortestDistance)
@@ -41,10 +41,11 @@ public class Turret : MonoBehaviour
             }
         }
 
-        if(nearestEnemy != null && shortestDistance <= range)
+        if (nearestEnemy != null && shortestDistance <= range)
         {
             target = nearestEnemy.transform;
-        } else
+        }
+        else
         {
             target = null;
         }
@@ -59,7 +60,7 @@ public class Turret : MonoBehaviour
             return;
         }
 
-        if(useLaser)
+        if (useLaser)
         {
             Laser();
         }
@@ -85,7 +86,7 @@ public class Turret : MonoBehaviour
         GameObject bulletGO = (GameObject)Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
         Bullet bullet = bulletGO.GetComponent<Bullet>();
 
-        if(bullet != null)
+        if (bullet != null)
         {
             bullet.Seek(target);
         }
@@ -102,4 +103,15 @@ public class Turret : MonoBehaviour
         Gizmos.color = Color.red;
         Gizmos.DrawWireSphere(transform.position, range);
     }
+
+    void OnMouseOver()
+    {
+        if (Input.GetMouseButtonDown(0))
+        {
+           GameMaster.Instance.tower = this.gameObject;
+            GameMaster.Instance.towerSets = this;
+        }
+    }
+
+
 }

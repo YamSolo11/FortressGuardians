@@ -4,8 +4,9 @@ using UnityEngine;
 
 public class GameMaster : MonoBehaviour
 {
-    public GameObject PurchaseBaseTower;
-    public GameObject PurchaseMissleTower;
+    public GameObject tower;
+    public Turret towerSets;
+    public GameObject nodeUI;
 
     public int currency = 400;
 
@@ -26,6 +27,26 @@ public class GameMaster : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if(tower != null)
+        {
+            nodeUI.SetActive(true);
+            if (Input.GetKeyUp(KeyCode.Escape))
+            {
+                tower = null;
+                nodeUI.SetActive(false);
+            }
+        }
+    }
+
+    public void upgrade()
+    {
+        towerSets.range = towerSets.range + 5f;
+        towerSets.fireRate = towerSets.fireRate + .5f;
+    }
+
+    public void sell()
+    {
+        Destroy(tower);
+        //tower = null;
     }
 }

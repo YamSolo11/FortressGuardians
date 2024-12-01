@@ -6,15 +6,18 @@ public class Grid : MonoBehaviour
     public Material terrainMaterial;
     public Material edgeMaterial;
     public float waterLevel = .4f;
+    public float sandLevel = .5f;
     public float scale = .1f;
     public int size = 300;
+    bool isWater;
+    bool isSand;
 
     //store grid
     Cell[,] grid;
 
 
     //start
-    void Start()
+    void Awake()
     {
         //create a new noise map for random generation heights
         float[,] noiseMap = new float[size, size];
@@ -43,6 +46,7 @@ public class Grid : MonoBehaviour
 
         //create out grid of cells
         grid = new Cell[size, size];
+
         for (int y = 0; y < size; y++)
         {
             for (int x = 0; x < size; x++)

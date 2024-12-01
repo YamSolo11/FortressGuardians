@@ -6,6 +6,7 @@ public class Cell
     public Cell(bool isWater)
     {
         this.isWater = isWater;
+        
     }
 
 }

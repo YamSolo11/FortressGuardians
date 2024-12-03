@@ -367,6 +367,7 @@
 "Assets/Scripts/NodeUI.cs"
 "Assets/Scripts/pathFinding.cs"
 "Assets/Scripts/pathGrid.cs"
+"Assets/Scripts/PauseMenu.cs"
 "Assets/Scripts/ProtectBase.cs"
 "Assets/Scripts/SceneLoader.cs"
 "Assets/Scripts/shop.cs"

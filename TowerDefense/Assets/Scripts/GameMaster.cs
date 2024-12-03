@@ -9,6 +9,7 @@ public class GameMaster : MonoBehaviour
     public GameObject nodeUI;
 
     public int currency = 400;
+    public int lives = 20;
 
     public static GameMaster Instance { get; private set; }
 

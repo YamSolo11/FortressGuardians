@@ -6,6 +6,7 @@ public class Bullet : MonoBehaviour
 
     public float speed = 70f;
     public float explosionRadius = 0f;
+    public float damageAmount = 50f;
     public GameObject impactEffect;
 
 
@@ -68,8 +69,8 @@ public class Bullet : MonoBehaviour
 
     void Damage(Transform enemy)
     {
-        GameMaster.Instance.currency = GameMaster.Instance.currency + 100;
-        Destroy(enemy.gameObject);
+        enemy.GetComponent<Enemy>().TakeDamage(damageAmount);
+        //Destroy(enemy.gameObject);
     }
 
     void OnDrawGizmosSelected()

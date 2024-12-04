@@ -9,6 +9,11 @@ ModelImporter:
       assembly: UnityEngine.CoreModule
       name: initialShadingGroup
     second: {fileID: 2261683542439678063, guid: 12777407986e82d448a9ac8363429aad, type: 3}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pCone2Mat
+    second: {fileID: 2100000, guid: 4fde3d9142dfe2844be8030d7cdb74a1, type: 2}
   materials:
     materialImportMode: 1
     materialName: 0

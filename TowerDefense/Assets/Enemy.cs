@@ -15,11 +15,15 @@ public class Enemy : MonoBehaviour
     void Start()
     {
         health = StartHealth;
+
+        GameObject.Find("pCone2").GetComponent<Renderer>().material.color = Color.red;
     }
 
     public void TakeDamage(float amount)
     {
         health -= amount;
+
+        
 
         healthBar.fillAmount = health / StartHealth;
 

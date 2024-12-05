@@ -4,13 +4,13 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 
-public class LivesCounter : MonoBehaviour
+public class UICounter : MonoBehaviour
 {
     public TMP_Text scoreText;
 
     // Update is called once per frame
     void Update()
     {
-        scoreText.text = "Lives: " + GameMaster.Instance.lives.ToString();
+        scoreText.text = GameMaster.Instance.currency.ToString();
     }
 }

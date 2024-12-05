@@ -354,18 +354,15 @@
 -analyzer:"C:/Program Files/Unity/Hub/Editor/2022.3.45f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.SourceGenerators.dll"
 "Assets/Scripts/Bullet.cs"
 "Assets/Scripts/CameraController.cs"
-<<<<<<< Updated upstream
 "Assets/Scripts/Cell.cs"
 "Assets/Scripts/CurrencyCounter.cs"
 "Assets/Scripts/Enemy.cs"
-=======
->>>>>>> Stashed changes
 "Assets/Scripts/EnemyAttack.cs"
 "Assets/Scripts/EnemySpawner.cs"
 "Assets/Scripts/GameExitScript.cs"
 "Assets/Scripts/GameMaster.cs"
+"Assets/Scripts/Grid.cs"
 "Assets/Scripts/GroundPlacementController.cs"
-<<<<<<< Updated upstream
 "Assets/Scripts/LivesCounter.cs"
 "Assets/Scripts/LookAtCamera.cs"
 "Assets/Scripts/Node.cs"
@@ -374,16 +371,6 @@
 "Assets/Scripts/pathGrid.cs"
 "Assets/Scripts/PauseMenu.cs"
 "Assets/Scripts/ProtectBase.cs"
-=======
-"Assets/Scripts/landGen and pathfind scripts/Cell.cs"
-"Assets/Scripts/landGen and pathfind scripts/Grid.cs"
-"Assets/Scripts/landGen and pathfind scripts/Heap.cs"
-"Assets/Scripts/landGen and pathfind scripts/Node.cs"
-"Assets/Scripts/landGen and pathfind scripts/pathFinding.cs"
-"Assets/Scripts/landGen and pathfind scripts/pathRequestManager.cs"
-"Assets/Scripts/landGen and pathfind scripts/Units.cs"
-"Assets/Scripts/NodeUI.cs"
->>>>>>> Stashed changes
 "Assets/Scripts/SceneLoader.cs"
 "Assets/Scripts/shop.cs"
 "Assets/Scripts/Turret.cs"

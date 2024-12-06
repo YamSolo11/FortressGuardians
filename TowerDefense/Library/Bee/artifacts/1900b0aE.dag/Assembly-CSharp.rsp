@@ -367,7 +367,7 @@
 "Assets/Scripts/LookAtCamera.cs"
 "Assets/Scripts/Node.cs"
 "Assets/Scripts/NodeUI.cs"
-"Assets/Scripts/Pathfinding.cs"
+"Assets/Scripts/pathFinding.cs"
 "Assets/Scripts/pathGrid.cs"
 "Assets/Scripts/PauseMenu.cs"
 "Assets/Scripts/ProtectBase.cs"

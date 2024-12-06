@@ -8,6 +8,7 @@ public class Enemy : MonoBehaviour
     public float StartHealth = 100;
     public float health = 100;
     public int points = 100;
+    public int payValue = 50;
 
     [Header("Unity Stuff")]
     public Image healthBar;
@@ -35,7 +36,8 @@ public class Enemy : MonoBehaviour
 
     void Die()
     {
-        GameMaster.Instance.currency = GameMaster.Instance.currency + points;
+        GameMaster.Instance.currency = GameMaster.Instance.currency + payValue;
+        GameMaster.Instance.points = GameMaster.Instance.points + points;
         Destroy(gameObject);
     }
 }

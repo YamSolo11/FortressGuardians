@@ -65,7 +65,7 @@ public class Shop : MonoBehaviour
     public void SellTurret()
     {
         MainHub.currency = MainHub.currency + cost;
-        //MainHub.sell();
+        MainHub.sell();
     }
 
     private void Update()

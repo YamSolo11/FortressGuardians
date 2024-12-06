@@ -10,6 +10,7 @@ public class GameMaster : MonoBehaviour
 
     public int currency = 400;
     public int lives = 20;
+    public int points = 0;
 
     public static GameMaster Instance { get; private set; }
 
@@ -31,7 +32,7 @@ public class GameMaster : MonoBehaviour
         if(tower != null)
         {
             nodeUI.SetActive(true);
-            if (Input.GetKeyUp(KeyCode.Escape))
+            if (Input.GetKeyUp(KeyCode.Q))
             {
                 tower = null;
                 nodeUI.SetActive(false);
@@ -48,6 +49,7 @@ public class GameMaster : MonoBehaviour
     public void sell()
     {
         Destroy(tower);
-        //tower = null;
+        tower = null;
+        nodeUI.SetActive(false);
     }
 }

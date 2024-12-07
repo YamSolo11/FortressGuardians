@@ -35,12 +35,13 @@ public class Shop : MonoBehaviour
 
     public void PurchaseAnotherTurret()
     {
-        if ((MainHub.currency - cost) >= 0)
+        //if there is enough money, let them buy the turret
+        if ((MainHub.currency - cost) >= 0) 
         {
             if (CurrentPlaceableObject == null)
             {
-                CurrentPlaceableObject = Instantiate(PlaceableObjectPrefab);
-                _actionObject = CurrentPlaceableObject.GetComponent<BoxCollider>();
+                CurrentPlaceableObject = Instantiate(PlaceableObjectPrefab); //Create the new turret in scene
+                _actionObject = CurrentPlaceableObject.GetComponent<BoxCollider>(); //get the hitbox of the turret to turn on later
             }
         }
         else
@@ -51,6 +52,7 @@ public class Shop : MonoBehaviour
 
     public void UpdateTurret()
     {
+        //Upgrade the turret. Basic. Might need to give them options later
         if ((MainHub.currency - cost) >= 0)
         {
             MainHub.upgrade();
@@ -62,6 +64,7 @@ public class Shop : MonoBehaviour
         }
     }
 
+    //Sell the turret
     public void SellTurret()
     {
         MainHub.currency = MainHub.currency + cost;
@@ -70,11 +73,14 @@ public class Shop : MonoBehaviour
 
     private void Update()
     {
+        //If there is a placible turret created in the scene by the button, do this
         if (CurrentPlaceableObject != null)
         {
-            MoveCurrentPlaceableObjectToMouse();
-            ReleaseIfClicked();
-            if(Input.GetKeyUp(KeyCode.Escape))
+            MoveCurrentPlaceableObjectToMouse(); //Move the tower to the mouse
+            ReleaseIfClicked(); //release tower if clicked
+
+            //If they press Q, then the tower gets deleted and you don't buy it
+            if(Input.GetKeyUp(KeyCode.Q))
             {
                 Destroy(CurrentPlaceableObject);
                 CurrentPlaceableObject = null;
@@ -84,8 +90,10 @@ public class Shop : MonoBehaviour
 
     private void MoveCurrentPlaceableObjectToMouse()
     {
+        //Get the mouse location for main camera
         Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
 
+        //move the tower with the mouse location
         RaycastHit hitInfo;
         if (Physics.Raycast(ray, out hitInfo))
         {
@@ -96,11 +104,12 @@ public class Shop : MonoBehaviour
 
     private void ReleaseIfClicked()
     {
+        //Once you click the mouse on the ground, places the object.
         if (Input.GetMouseButtonDown(0))
         {
-            _actionObject.enabled = true;
-            MainHub.currency = MainHub.currency - cost;
-            CurrentPlaceableObject = null;
+            _actionObject.enabled = true; //turn on box collider
+            MainHub.currency = MainHub.currency - cost; //subtracts the cost
+            CurrentPlaceableObject = null; //makes the current item null.
         }
     }
 }

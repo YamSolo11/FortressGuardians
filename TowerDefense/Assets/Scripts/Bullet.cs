@@ -2,12 +2,13 @@ using UnityEngine;
 
 public class Bullet : MonoBehaviour
 {
+    //Public changeable variables depending on the bullet type. 
     private Transform target;
 
     public float speed = 70f;
-    public float explosionRadius = 0f;
+    public float explosionRadius = 0f; //If this is greater than 0, the bullet will explode in a radius
     public float damageAmount = 50f;
-    public GameObject impactEffect;
+    public GameObject impactEffect; //effect of the bullet. 
 
 
     public void Seek(Transform _target)

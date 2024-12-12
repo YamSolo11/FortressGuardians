@@ -25,14 +25,19 @@ public class ProtectBase : MonoBehaviour
             return;
         }
 
-        GameObject enemy = GameObject.FindWithTag(enemyTag);
-        float distanceToEnemy = Vector3.Distance(transform.position, enemy.transform.position);
+        GameObject[] enemies = GameObject.FindGameObjectsWithTag(enemyTag);
 
-        if (distanceToEnemy < range)
+        foreach (GameObject enemy in enemies)
         {
-            MainHub.lives = MainHub.lives - 1;
-            Destroy(enemy);
+            float distanceToEnemy = Vector3.Distance(transform.position, enemy.transform.position);
+            if (distanceToEnemy < range)
+            {
+                MainHub.lives = MainHub.lives - 1;
+                Destroy(enemy);
+            }
         }
+
+        
     }
 
     void OnDrawGizmosSelected()

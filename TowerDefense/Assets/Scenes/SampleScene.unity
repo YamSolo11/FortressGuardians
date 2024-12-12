@@ -1225,10 +1225,6 @@ MonoBehaviour:
   - {fileID: 581692146}
   - {fileID: 2106404235}
   - {fileID: 1614342450}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
   scores:
   - {fileID: 1931990184}
   - {fileID: 1457490122}
@@ -1238,10 +1234,6 @@ MonoBehaviour:
   - {fileID: 609916965}
   - {fileID: 519385438}
   - {fileID: 1225730175}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
 --- !u!4 &314725035
 Transform:
   m_ObjectHideFlags: 0
@@ -3661,75 +3653,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1001 &865253859
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 369284147306183749, guid: 3b986929929cd78419d1c5321f40e8c5, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 3427320938385580458, guid: 3b986929929cd78419d1c5321f40e8c5, type: 3}
-      propertyPath: m_TagString
-      value: Enemy
-      objectReference: {fileID: 0}
-    - target: {fileID: 3531233782953294698, guid: 3b986929929cd78419d1c5321f40e8c5, type: 3}
-      propertyPath: m_Name
-      value: Enemy, but the damage doesn't work. And I think it's being used, so
-        I can't delete
-      objectReference: {fileID: 0}
-    - target: {fileID: 4200352971969159632, guid: 3b986929929cd78419d1c5321f40e8c5, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -26.2
-      objectReference: {fileID: 0}
-    - target: {fileID: 4200352971969159632, guid: 3b986929929cd78419d1c5321f40e8c5, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 4200352971969159632, guid: 3b986929929cd78419d1c5321f40e8c5, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -100.6
-      objectReference: {fileID: 0}
-    - target: {fileID: 4200352971969159632, guid: 3b986929929cd78419d1c5321f40e8c5, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4200352971969159632, guid: 3b986929929cd78419d1c5321f40e8c5, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4200352971969159632, guid: 3b986929929cd78419d1c5321f40e8c5, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4200352971969159632, guid: 3b986929929cd78419d1c5321f40e8c5, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4200352971969159632, guid: 3b986929929cd78419d1c5321f40e8c5, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4200352971969159632, guid: 3b986929929cd78419d1c5321f40e8c5, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4200352971969159632, guid: 3b986929929cd78419d1c5321f40e8c5, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 3531233782953294698, guid: 3b986929929cd78419d1c5321f40e8c5, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1093870905}
-  m_SourcePrefab: {fileID: 100100000, guid: 3b986929929cd78419d1c5321f40e8c5, type: 3}
 --- !u!1001 &870494645
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4658,25 +4581,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!1 &1093870902 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3531233782953294698, guid: 3b986929929cd78419d1c5321f40e8c5, type: 3}
-  m_PrefabInstance: {fileID: 865253859}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1093870905
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1093870902}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 785e0f5b4b8ce8e469998e537c5c6fe7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  seeker: {fileID: 0}
-  target: {fileID: 830822454}
 --- !u!1 &1158447381
 GameObject:
   m_ObjectHideFlags: 0
@@ -7444,7 +7348,6 @@ SceneRoots:
   - {fileID: 705507995}
   - {fileID: 1192819509}
   - {fileID: 870494645}
-  - {fileID: 865253859}
   - {fileID: 643389102}
   - {fileID: 1008414302}
   - {fileID: 1218579283}

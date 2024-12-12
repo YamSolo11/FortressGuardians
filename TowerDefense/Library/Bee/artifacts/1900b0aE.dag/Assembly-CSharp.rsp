@@ -388,6 +388,7 @@
 "Assets/Scripts/ScoreManager.cs"
 "Assets/Scripts/shop.cs"
 "Assets/Scripts/Turret.cs"
+"Assets/Scripts/WaveSpawner.cs"
 "Assets/TextMesh Pro/Examples & Extras/Scripts/Benchmark01.cs"
 "Assets/TextMesh Pro/Examples & Extras/Scripts/Benchmark01_UGUI.cs"
 "Assets/TextMesh Pro/Examples & Extras/Scripts/Benchmark02.cs"

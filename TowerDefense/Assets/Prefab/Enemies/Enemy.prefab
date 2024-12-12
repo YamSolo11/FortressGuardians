@@ -374,8 +374,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8193c7474bd96db469577e6d7022c362, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  StartHealth: 100
   health: 100
-  points: 100
+  points: 50
+  payValue: 50
   healthBar: {fileID: 5194331983656970012}
 --- !u!4 &4200352971969159632 stripped
 Transform:

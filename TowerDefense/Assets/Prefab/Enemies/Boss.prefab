@@ -359,8 +359,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartHealth: 100
-  health: 100
-  points: 100
+  health: 200
+  points: 200
+  payValue: 50
   healthBar: {fileID: 1158875005839334845}
 --- !u!65 &2310256488710807434
 BoxCollider:

@@ -20,6 +20,11 @@ public class ProtectBase : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if(!GameObject.FindWithTag(enemyTag))
+        {
+            return;
+        }
+
         GameObject enemy = GameObject.FindWithTag(enemyTag);
         float distanceToEnemy = Vector3.Distance(transform.position, enemy.transform.position);
 

@@ -316,7 +316,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 569ff116245f28d4499705bc5b16a63b, type: 3}
       propertyPath: m_Name
-      value: Enemy5
+      value: Enemy4
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 569ff116245f28d4499705bc5b16a63b, type: 3}
       propertyPath: m_TagString
@@ -359,8 +359,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartHealth: 100
-  health: 100
+  health: 150
   points: 100
+  payValue: 50
   healthBar: {fileID: 4101184027041744202}
 --- !u!65 &6492745593809914271
 BoxCollider:

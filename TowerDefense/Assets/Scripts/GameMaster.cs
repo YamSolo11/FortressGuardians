@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameMaster : MonoBehaviour
 {
@@ -37,6 +38,10 @@ public class GameMaster : MonoBehaviour
                 tower = null;
                 nodeUI.SetActive(false);
             }
+        }
+        if(lives <= 0)
+        {
+            SceneManager.LoadScene("GameOver");
         }
     }
 

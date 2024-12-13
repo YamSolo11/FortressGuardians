@@ -374,6 +374,7 @@
 "Assets/Scripts/GameMaster.cs"
 "Assets/Scripts/Grid.cs"
 "Assets/Scripts/GroundPlacementController.cs"
+"Assets/Scripts/LeaderBoardDisplay.cs"
 "Assets/Scripts/LeaderBoardManager.cs"
 "Assets/Scripts/LivesCounter.cs"
 "Assets/Scripts/LookAtCamera.cs"
